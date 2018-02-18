@@ -1,6 +1,6 @@
 # About
 
-A practical demonstration of how to use AutoFixture and xUnit in NET Core 2.0
+A practical demonstration of how to use AutoFixture and xUnit 2 in NET Core 2.0
 
 # License
 

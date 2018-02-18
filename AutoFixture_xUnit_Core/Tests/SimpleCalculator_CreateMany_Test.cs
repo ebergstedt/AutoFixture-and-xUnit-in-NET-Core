@@ -1,34 +1,35 @@
+using System.Linq;
 using AutoFixture;
 using AutoFixture_xUnit_Core.Concrete;
 using Xunit;
 
-namespace AutoFixture_xUnit_Core.Test
+namespace AutoFixture_xUnit_Core.Tests
 {
-    public class SimpleCalculator_BasicFixtureTest
+    public class SimpleCalculator_CreateMany_Test
     {
         [Fact]
-        public void SimpleCalculator_BasicFixture_Addition()
+        public void SimpleCalculator_CreateMany_Addition()
         {
             // Arrange
             var calc = new SimpleCalculator();
             var fix = new Fixture();
 
             // Act
-            calc.Add(fix.Create<int>());
+            fix.CreateMany<int>(100).ToList().ForEach(n => calc.Add(n));            
 
             // Assert
             Assert.True(calc.Result > 0);
         }
 
         [Fact]
-        public void SimpleCalculator_BasicFixture_Subtraction()
+        public void SimpleCalculator_CreateMany_Subtraction()
         {
             // Arrange
             var calc = new SimpleCalculator();
             var fix = new Fixture();
 
             // Act
-            calc.Subtract(fix.Create<int>());
+            fix.CreateMany<int>(100).ToList().ForEach(n => calc.Subtract(n));
 
             // Assert
             Assert.True(calc.Result < 0);

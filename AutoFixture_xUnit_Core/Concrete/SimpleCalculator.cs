@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using AutoFixture_xUnit_Core.Interface;
+using AutoFixture_xUnit_Core.Interfaces;
 
 namespace AutoFixture_xUnit_Core.Concrete
 {

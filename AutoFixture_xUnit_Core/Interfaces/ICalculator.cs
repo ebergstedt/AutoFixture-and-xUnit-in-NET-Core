@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AutoFixture_xUnit_Core.Interface
+﻿namespace AutoFixture_xUnit_Core.Interfaces
 {
     public interface ICalculator
     {

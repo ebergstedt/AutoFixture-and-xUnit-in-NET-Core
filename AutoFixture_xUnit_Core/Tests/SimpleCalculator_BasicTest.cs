@@ -1,7 +1,7 @@
 using AutoFixture_xUnit_Core.Concrete;
 using Xunit;
 
-namespace AutoFixture_xUnit_Core.Test
+namespace AutoFixture_xUnit_Core.Tests
 {
     public class SimpleCalculator_BasicTest
     {

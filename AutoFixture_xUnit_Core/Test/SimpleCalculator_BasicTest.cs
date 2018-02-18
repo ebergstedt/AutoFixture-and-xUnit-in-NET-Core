@@ -6,7 +6,7 @@ namespace AutoFixture_xUnit_Core.Test
     public class SimpleCalculator_BasicTest
     {
         [Fact]
-        public void Test_SimpleCalculator_Addition()
+        public void SimpleCalculator_Addition()
         {
             // Arrange
             var calc = new SimpleCalculator();
@@ -20,7 +20,7 @@ namespace AutoFixture_xUnit_Core.Test
         }
 
         [Fact]
-        public void Test_SimpleCalculator_Subtraction()
+        public void SimpleCalculator_Subtraction()
         {
             // Arrange
             var calc = new SimpleCalculator();

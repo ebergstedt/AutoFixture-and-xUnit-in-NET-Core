@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using AutoFixture;
 using AutoFixture_xUnit_Core.Containers;
 using AutoFixture_xUnit_Core.SpecimenBuilders;
 using Xunit;
 
-namespace AutoFixture_xUnit_Core.Test
+namespace AutoFixture_xUnit_Core.Tests
 {
     public class EmailDto_Test
     {
